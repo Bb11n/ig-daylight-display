@@ -1,0 +1,14 @@
+dependencies:
+  idf: ">=5.4,<5.5"
+  espressif/arduino-esp32:
+    version: "=3.3.10"
+  lvgl/lvgl:
+    version: "=8.4.0"
+  h2zero/esp-nimble-cpp:
+    version: "=2.5.0"
+  espressif/esp-sr:
+    version: "=2.4.6"
+  espressif/esp-dsp:
+    version: "=1.8.0"
+  espressif/esp_codec_dev:
+    version: "=1.5.11"

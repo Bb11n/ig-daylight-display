@@ -1,0 +1,40 @@
+# ESP-IDF / CMake build outputs
+build/
+build_*/
+build_logs/
+managed_components/
+sdkconfig
+sdkconfig.old
+CMakeCache.txt
+CMakeFiles/
+compile_commands.json
+*.bin
+*.elf
+*.map
+*.o
+*.obj
+*.d
+
+# Arduino / PlatformIO
+.pio/
+*.ino.cpp
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary and local files
+.cache/
+__pycache__/
+*.pyc
+*.tmp
+*.log
+.env
+.env.*
+*.pem
+*.key
+credentials.*
+secrets.*
