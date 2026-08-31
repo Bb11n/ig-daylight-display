@@ -46,9 +46,10 @@ foreach ($requirement in $requirements) {
     Write-Host "PHASE2_LOCAL_LIBRARY: name=$($requirement.Directory) version=$($requirement.Version) header_sha256=$hash"
 }
 
-$pinConfig = Join-Path $libraryRoot "Mylibrary/pin_config.h"
+$projectRoot = Split-Path -Parent $PSScriptRoot
+$pinConfig = Join-Path $projectRoot "main/pin_config.h"
 if (-not (Test-Path -LiteralPath $pinConfig -PathType Leaf)) {
-    $failures.Add("missing verified pin config: $pinConfig")
+    $failures.Add("missing project pin config: $pinConfig")
 }
 
 if ($failures.Count -gt 0) {
